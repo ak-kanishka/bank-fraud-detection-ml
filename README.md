@@ -11,7 +11,7 @@ To build an AI-powered fraud detection web application that can classify suspici
 - Flask
 - Pandas
 - Scikit-learn
-- Random Forest Classifier
+- XGBoost
 - SQLite
 - HTML
 - CSS
