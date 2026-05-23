@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Prediction Result</h1>
+
+{% if "Fraud" in result %}
+    <h2 class="fraud">{{ result }}</h2>
+{% else %}
+    <h2 class="safe">{{ result }}</h2>
+{% endif %}
+
+<p><b>Risk Score:</b> {{ risk_score }}</p>
+
+<p><b>Fraud Probability:</b> {{ probability_percent }}%</p>
+
+<p><b>Explanation:</b> {{ reason }}</p>
+
+<p><b>SHAP Analysis:</b> {{ shap_reason }}</p>
+
+<a href="/">Go Back</a>
+
+</body>
+</html>

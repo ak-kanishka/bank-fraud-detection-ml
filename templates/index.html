@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bank Fraud Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Bank Fraud Detection System</h1>
+
+<form action="/predict" method="POST">
+
+    <label>Transaction Amount</label>
+    <input type="number" name="amount" required>
+
+    <label>Device Risk Score</label>
+    <input type="number" name="device_risk" required>
+
+    <label>IP Risk Score</label>
+    <input type="number" name="ip_risk" required>
+
+    <button type="submit">
+        Predict Fraud
+    </button>
+
+</form>
+
+<a href="/history">
+    View Prediction History
+</a>
+
+</body>
+</html>
